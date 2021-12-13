@@ -1,0 +1,20 @@
+{
+  "name": "encrypted-messaging",
+  "version": "1.0.0",
+  "description": "I've become quite intrigued lately with the prospect of on-chain encrypted messaging leveraging any Ethereum wallet's public/private key for encryption and decryption. Encrypting data with a given user's public key is a relatively easy operation. But in order to decrypt this data seamlessly in a dapp, the Ethereum wallet must play a role. The only alternative way to decrypt is instructing the user to export their private key and run an algorithm, which is a terrible user experience for the mainstream user.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mok0230/encrypted-messaging.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mok0230/encrypted-messaging/issues"
+  },
+  "homepage": "https://github.com/mok0230/encrypted-messaging#readme"
+}

@@ -13,6 +13,20 @@ We need to decouple the two, but that's a topic for an EIP I'm hoping to author 
 
 This repo contains a number of sample implementations with this encrypt/decrypt API.
 
+## Hardhat Commands
+
+Sample set of Hardhat commands:
+
+```shell
+npx hardhat accounts
+npx hardhat compile
+npx hardhat clean
+npx hardhat test
+npx hardhat node
+node scripts/sample-script.js
+npx hardhat help
+```
+
 ## Resources
 
 Sample implementation: https://codesandbox.io/s/metamask-encrpt-decrypt-example-uzssd?file=/src/App.tsx

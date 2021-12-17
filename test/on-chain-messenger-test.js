@@ -1,7 +1,7 @@
 const { assert } = require("chai");
 const { ethers } = require("hardhat");
 
-describe("OnChainMessenger", function () {
+describe("OnChainMessengerV1", function () {
   let senderAddr, content, message;
 
   before(async () => {
@@ -13,7 +13,7 @@ describe("OnChainMessenger", function () {
     recipientAddr = await recipient.getAddress();
     content = "foo";
 
-    const OnChainMessenger = await ethers.getContractFactory("OnChainMessenger", deployer);
+    const OnChainMessenger = await ethers.getContractFactory("OnChainMessengerV1", deployer);
     const onChainMessenger = await OnChainMessenger.deploy();
     await onChainMessenger.deployed();
 

@@ -1,7 +1,7 @@
 //SPDX-License-Identifier: Unlicense
 pragma solidity ^0.8.0;
 
-import "hardhat/console.sol";
+import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 
 // simple messenger app that stores all data on-chain
 // in practice, this is probably not ideal as it will 
@@ -11,15 +11,13 @@ import "hardhat/console.sol";
 // but this kind of seems like the hello world of 
 // encrypted messaging
 
-contract OnChainMessenger {
+contract OnChainMessengerV1 is Initializable {
   mapping(address => Message) public messages;
 
   struct Message {
     address sender;
     string content;
   }
-
-  constructor() { }
 
   function sendMessage(address recipient, string memory message) public {
     messages[recipient] = Message(msg.sender, message);

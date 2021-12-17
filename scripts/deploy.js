@@ -1,3 +1,5 @@
+const { ethers, upgrades } = require("hardhat");
+
 async function main() {
   const [deployer] = await ethers.getSigners();
 
@@ -7,8 +9,8 @@ async function main() {
   
   console.log("Account balance:", (await ethers.utils.formatEther(weiAmount)));
 
-  const Contract = await ethers.getContractFactory("OnChainMessenger");
-  const contract = await Contract.deploy();
+  const Contract = await ethers.getContractFactory("OnChainMessengerV1");
+  const contract = await upgrades.deployProxy(Contract);
 
   console.log("Contract address:", contract.address);
 }

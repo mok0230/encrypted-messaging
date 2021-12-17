@@ -13,6 +13,10 @@ We need to decouple the two, but that's a topic for an EIP I'm hoping to author 
 
 This repo contains a number of sample implementations with this encrypt/decrypt API.
 
+## Requirements
+
+In order to use interact with any of the user interfaces in this repo, you must be on a computer web browser and have MetaMask.
+
 ## Hardhat Commands
 
 Sample set of Hardhat commands:

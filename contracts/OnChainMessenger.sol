@@ -16,7 +16,7 @@ contract OnChainMessenger {
 
   struct Message {
     address sender;
-    string message;
+    string content;
   }
 
   constructor() { }

@@ -17,19 +17,31 @@ This repo contains a number of sample implementations with this encrypt/decrypt 
 
 In order to use interact with any of the user interfaces in this repo, you must be on a computer web browser and have MetaMask.
 
-## Hardhat Commands
+## Architecture
 
-Sample set of Hardhat commands:
+### Testing
+
+To run unit tests, execute:
 
 ```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
 npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
 ```
+
+### Upgradeability
+
+The contracts in this repo are upgradeable. In order to deploy, first execute the deploy script:
+
+```shell
+npx hardhat run scripts/deploy.js --network rinkeby
+```
+
+Then go to [Rinkeby EtherScan](https://rinkeby.etherscan.io/) and plug in the deployed contract address emitted from the deploy script (the proxy address). Go to Contract > Code > More Options on the right side and select "Is this a Proxy?". Copy the address shown (the implementation address). Then run the following command:
+
+```shell
+npx hardhat verify --network rinkeby IMPLEMENTATION_ADDRESS
+```
+
+Then go through "Is this a Proxy?" flow again and verify the contract.
 
 ## Resources
 

@@ -7,9 +7,9 @@ module.exports = {
     rinkeby: {
       url: `${process.env.ALCHEMY_RINKEBY_URL}`,
       accounts: [`0x${process.env.RINKEBY_PRIVATE_KEY}`],
-    },
-    etherscan: {
-      apiKey: process.env.ETHERSCAN_KEY
-    } 
-  }
+    }
+  },
+  etherscan: {
+    apiKey: process.env.ETHERSCAN_KEY
+  } 
 };

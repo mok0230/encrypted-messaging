@@ -2,7 +2,7 @@ const { assert } = require("chai");
 const { ethers } = require("hardhat");
 
 describe("OnChainMessengerV1", function () {
-  let senderAddr, content, message;
+  let deployerAddr, senderAddr, content, message;
 
   before(async () => {
     const deployer = await ethers.provider.getSigner(0);
@@ -10,6 +10,7 @@ describe("OnChainMessengerV1", function () {
     const recipient = await ethers.provider.getSigner(2);
 
     senderAddr = await sender.getAddress();
+    deployerAddr = await deployer.getAddress();
     recipientAddr = await recipient.getAddress();
     content = "foo";
 

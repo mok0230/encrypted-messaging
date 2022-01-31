@@ -45,4 +45,4 @@ Then go through "Is this a Proxy?" flow again and verify the contract.
 
 ## Resources
 
-Sample implementation: https://codesandbox.io/s/metamask-encrpt-decrypt-example-uzssd?file=/src/App.tsx
+* Sample implementation: https://codesandbox.io/s/metamask-encrpt-decrypt-example-uzssd?file=/src/App.tsx

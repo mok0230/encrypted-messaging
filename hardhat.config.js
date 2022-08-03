@@ -9,6 +9,10 @@ module.exports = {
     rinkeby: {
       url: `${process.env.ALCHEMY_RINKEBY_URL}`,
       accounts: [`0x${process.env.RINKEBY_PRIVATE_KEY}`],
+    },
+    goerli: {
+      url: `${process.env.ALCHEMY_GOERLI_URL}`,
+      accounts: [`0x${process.env.RINKEBY_PRIVATE_KEY}`],
     }
   },
   etherscan: {

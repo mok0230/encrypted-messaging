@@ -1,5 +1,5 @@
 const { ethers } = require("hardhat");
-const CONTRACT_NAME = "OnChainMessengerV2";
+const CONTRACT_NAME = "OnChainMessengerV1";
 
 async function main() {
   const [deployer] = await ethers.getSigners();

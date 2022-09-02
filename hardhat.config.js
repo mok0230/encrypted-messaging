@@ -13,6 +13,11 @@ module.exports = {
     goerli: {
       url: `${process.env.ALCHEMY_GOERLI_URL}`,
       accounts: [`0x${process.env.RINKEBY_PRIVATE_KEY}`],
+    },
+    mumbai: {
+      url: `https://rpc-mumbai.maticvigil.com/`,
+      accounts: [`0x${process.env.RINKEBY_PRIVATE_KEY}`],
+      
     }
   },
   etherscan: {

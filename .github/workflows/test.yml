@@ -1,0 +1,20 @@
+---
+name: Deploy to Testnet
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        required: true
+        description: Git tag to deploy to testnet. Pattern v1.x.x
+
+jobs:
+  main:
+    name: Deploy
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Run
+        id: run-deploy
+        run: |
+          echo foo
+          exit 0
